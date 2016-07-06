@@ -8,6 +8,7 @@ Author URI: http://davidakennedy.com/
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: liberty
+Tags: light, black, white, right-sidebar, two-columns, custom-background, custom-colors, custom-menu, custom-header, editor-style, full-width-template, responsive-layout, accessibility-ready
 */
 
 /*--------------------------------------------------------------
@@ -263,7 +264,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: "Source Code Pro", Consolas, monaco, monospace;
+	font-family: "Roboto Mono", Consolas, monaco, monospace;
 	font-size: 18px;
 	font-size: 1rem;
 	line-height: 1.75;
@@ -276,7 +277,7 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-family: "Source Code Pro", Consolas, monaco, monospace;
+	font-family: "Roboto Mono", Consolas, monaco, monospace;
 	font-weight: bold;
 	margin: 0 0 .875em;
 }
@@ -329,7 +330,7 @@ address {
 }
 
 pre {
-	font-family: "Source Code Pro", Consolas, monaco, monospace;
+	font-family: "Roboto Mono", Consolas, monaco, monospace;
 	margin-bottom: 1.75em;
 	max-width: 100%;
 	overflow: auto;
@@ -339,7 +340,7 @@ code,
 kbd,
 tt,
 var {
-	font-family: "Source Code Pro", Consolas, monaco, monospace;
+	font-family: "Roboto Mono", Consolas, monaco, monospace;
 	font-size: 16px;
 }
 

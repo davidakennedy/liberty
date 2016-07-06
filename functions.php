@@ -165,17 +165,17 @@ add_action( 'wp_enqueue_scripts', 'liberty_scripts' );
  * Register Google Fonts
  */
 function liberty_fonts_url() {
-    $fonts_url = '';
+	$fonts_url = '';
 
-    /* Translators: If there are characters in your language that are not
-	 * supported by Liberty Baskerville, translate this to 'off'. Do not translate
+	/* Translators: If there are characters in your language that are not
+	 * supported by Roboto Mono, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$libre = esc_html_x( 'on', 'Source Code Pro font: on or off', 'liberty' );
+	$roboto_mono = esc_html_x( 'on', 'Roboto Mono font: on or off', 'liberty' );
 
-	if ( 'off' !== $libre ) {
+	if ( 'off' !== $roboto_mono ) {
 		$font_families = array();
-		$font_families[] = 'Source Code Pro:300,400,600,700';
+		$font_families[] = 'Roboto Mono:300,300i,400,400i,500,500i,700,700i';
 
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
