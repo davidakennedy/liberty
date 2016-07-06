@@ -1167,6 +1167,7 @@ td#next {
 	float: right;
 }
 .comment-form label {
+	font-weight: 500;
 	margin-right: .875em;
 	width: 7em;
 }
