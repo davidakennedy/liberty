@@ -115,7 +115,7 @@ html .mceContentBody {
 }
 body.mceContentBody {
 	color: #404040;
-	font-family: "Libre Baskerville", Liberty, Georgia, Times, serif;
+	font-family: "Roboto Mono", Consolas, monaco, monospace;
 	font-size: 18px;
 	font-size: 1rem;
 	line-height: 1.75;
@@ -128,7 +128,7 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-family: "Libre Baskerville", Liberty, Georgia, Times, serif;
+	font-family: "Roboto Mono", Consolas, monaco, monospace;
 	font-weight: bold;
 	margin: 0 0 .875em;
 }
@@ -179,7 +179,7 @@ address {
 }
 
 pre {
-	font-family: "Libre Baskerville", Liberty, Georgia, Times, serif;
+	font-family: "Roboto Mono", Consolas, monaco, monospace;
 	margin-bottom: 1.75em;
 	max-width: 100%;
 	overflow: auto;
@@ -189,7 +189,7 @@ code,
 kbd,
 tt,
 var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-family: "Roboto Mono", Consolas, monaco, monospace;
 	font-size: 16px;
 }
 
