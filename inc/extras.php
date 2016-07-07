@@ -36,3 +36,61 @@ function liberty_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'liberty_body_classes' );
+
+/*
+ * Filters the Categories archive widget to add a span around the post count
+ */
+
+function liberty_cat_count_span( $links ) {
+	$links = str_replace( '</a> (', '</a><span class="post-count">(', $links );
+	$links = str_replace( ')', ')</span>', $links );
+	return $links;
+}
+add_filter( 'wp_list_categories', 'liberty_cat_count_span' );
+
+/*
+ * Add a span around the post count in the Archives widget
+ */
+
+function liberty_archive_count_span( $links ) {
+	$links = str_replace( '</a>&nbsp;(', '</a><span class="post-count">(', $links );
+	$links = str_replace( ')', ')</span>', $links );
+	return $links;
+}
+add_filter( 'get_archives_link', 'liberty_archive_count_span' );
+
+if ( ! function_exists( 'liberty_continue_reading_link' ) ) :
+/**
+ * Returns an ellipsis and "Continue reading" plus off-screen title link for excerpts
+ */
+function liberty_continue_reading_link() {
+	return '&hellip; <a class="more-link" href="'. esc_url( get_permalink() ) . '">' . sprintf( wp_kses_post( __( 'Continue reading <span class="screen-reader-text">%1$s</span> <span class="meta-nav" aria-hidden="true">&rarr;</span>', 'liberty' ) ), esc_attr( strip_tags( get_the_title() ) ) ) . '</a>';
+}
+endif; // liberty_continue_reading_link
+
+
+/**
+ * Replaces "[...]" (appended to automatically generated excerpts) with liberty_continue_reading_link().
+ *
+ * To override this in a child theme, remove the filter and add your own
+ * function tied to the excerpt_more filter hook.
+ */
+function liberty_auto_excerpt_more( $more ) {
+	return liberty_continue_reading_link();
+}
+add_filter( 'excerpt_more', 'liberty_auto_excerpt_more' );
+
+
+/**
+ * Adds a pretty "Continue Reading" link to custom post excerpts.
+ *
+ * To override this link in a child theme, remove the filter and add your own
+ * function tied to the get_the_excerpt filter hook.
+ */
+function liberty_custom_excerpt_more( $output ) {
+	if ( has_excerpt() && ! is_attachment() ) {
+		$output .= liberty_continue_reading_link();
+	}
+	return $output;
+}
+add_filter( 'get_the_excerpt', 'liberty_custom_excerpt_more' );

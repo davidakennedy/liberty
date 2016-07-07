@@ -80,6 +80,52 @@ function liberty_entry_footer() {
 }
 endif;
 
+/*
+ * Custom comments display to move Reply link,
+ * used in comments.php
+ */
+function liberty_comments( $comment, $args, $depth ) {
+?>
+		<li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
+			<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-metadata">
+						<span class="comment-author vcard">
+							<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+
+							<?php printf( '<b class="fn">%s</b>', get_comment_author_link() ); ?>
+						</span>
+						<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID, $args ) ); ?>">
+							<time datetime="<?php comment_time( 'c' ); ?>">
+								<?php printf( '<span class="comment-date">%1$s</span><span class="comment-time screen-reader-text">%2$s</span>', get_comment_date(), get_comment_time() ); ?>
+							</time>
+						</a>
+						<?php
+						comment_reply_link( array_merge( $args, array(
+							'add_below' => 'div-comment',
+							'depth'     => $depth,
+							'max_depth' => $args['max_depth'],
+							'before'    => '<span class="reply">',
+							'after'     => '</span>'
+						) ) );
+						?>
+						<?php edit_comment_link( esc_html__( 'Edit', 'liberty' ), '<span class="edit-link">', '</span>' ); ?>
+
+					</div><!-- .comment-metadata -->
+
+					<?php if ( '0' == $comment->comment_approved ) : ?>
+					<p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'liberty' ); ?></p>
+					<?php endif; ?>
+				</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<?php comment_text(); ?>
+				</div><!-- .comment-content -->
+
+			</article><!-- .comment-body -->
+<?php
+}
+
 /**
  * Returns true if a blog has more than 1 category.
  *
