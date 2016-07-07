@@ -36,6 +36,13 @@ function liberty_setup() {
 	/* Add support for editor styles */
 	add_editor_style( array( 'editor-style.css', liberty_fonts_url() ) );
 
+	add_theme_support( 'custom-logo', array(
+		'height'      => 300,
+		'width'       => 300,
+		'flex-width'  => true,
+		'flex-height' => true,
+	) );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'liberty' ),
@@ -89,6 +96,19 @@ function liberty_content_width() {
 add_action( 'template_redirect', 'liberty_content_width' );
 
 endif; // if ! function_exists( 'liberty_content_width' )
+
+/**
+ * Return early if Custom Logos are not available.
+ *
+ * @todo Remove after WP 4.7
+ */
+function liberty_the_custom_logo() {
+	if ( ! function_exists( 'the_custom_logo' ) ) {
+		return;
+	} else {
+		the_custom_logo();
+	}
+}
 
 /**
  * Register widget area.

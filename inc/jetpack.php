@@ -20,11 +20,6 @@ function liberty_jetpack_setup() {
 
 	add_theme_support( 'jetpack-responsive-videos' );
 
-	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'liberty-site-logo', '300', '300' );
-
-	add_theme_support( 'site-logo', array( 'size' => 'liberty-site-logo' ) );
-
 } // end function liberty_jetpack_setup
 add_action( 'after_setup_theme', 'liberty_jetpack_setup' );
 

@@ -599,7 +599,7 @@ textarea {
 	display: block;
 	margin: 0 auto 1.75em;
 }
-.site-logo {
+.custom-logo {
 	clear: both;
 	display: block;
 	margin-bottom: 1.75em;
@@ -1332,7 +1332,7 @@ object {
 }
 
 @media screen and ( min-width: 45em ) {
-	.site-logo {
+	.custom-logo {
 		max-width: 300px;
 	}
 	.menu-toggle {
@@ -1559,7 +1559,7 @@ object {
 	.sticking .site-description {
 		display: none;
 	}
-	.sticking .site-logo {
+	.sticking .custom-logo {
 		clear: none;
 		display: inline-block;
 		margin-bottom: 0;
