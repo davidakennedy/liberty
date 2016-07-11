@@ -188,14 +188,28 @@ function liberty_fonts_url() {
 	$fonts_url = '';
 
 	/* Translators: If there are characters in your language that are not
-	 * supported by Roboto Mono, translate this to 'off'. Do not translate
+	 * supported by Roboto Slab, translate this to 'off'. Do not translate
+	 * into your own language.
+	 */
+	$roboto_slab = esc_html_x( 'on', 'Roboto Slab font: on or off', 'liberty' );
+
+	/* Translators: If there are characters in your language that are not
+	 * supported by Lora; translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
 	$roboto_mono = esc_html_x( 'on', 'Roboto Mono font: on or off', 'liberty' );
 
-	if ( 'off' !== $roboto_mono ) {
+	if ( 'off' !== $roboto_slab || 'off' !== $roboto_mono ) {
+
 		$font_families = array();
-		$font_families[] = 'Roboto Mono:300,300i,400,400i,500,500i,700,700i';
+
+		if ( 'off' !== $roboto_slab ) {
+			$font_families[] = 'Roboto Slab:300,400,700';
+		}
+
+		if ( 'off' !== $roboto_mono ) {
+			$font_families[] = 'Roboto Mono:300,300i,400,400i,500,500i,700,700i';
+		}
 
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
@@ -206,7 +220,6 @@ function liberty_fonts_url() {
 	}
 
 	return $fonts_url;
-
 }
 
 /**

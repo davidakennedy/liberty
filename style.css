@@ -277,7 +277,7 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-family: "Roboto Mono", Consolas, monaco, monospace;
+	font-family: "Roboto Slab", Georgia, Times, "Times New Roman", serif;
 	font-weight: bold;
 	margin: 0 0 .875em;
 }
@@ -486,6 +486,7 @@ caption {
 # Forms
 --------------------------------------------------------------*/
 label {
+	font-family: "Roboto Slab", Georgia, Times, "Times New Roman", serif;
 	font-style: italic;
 }
 button,
@@ -612,6 +613,7 @@ textarea {
 .site-title {
 	clear: none;
 	display: inline-block;
+	font-family: "Roboto Slab", Georgia, Times, "Times New Roman", serif;
 	font-weight: bold;
 	line-height: 1.2;
 	margin: 0 .4375em 0 0;
@@ -763,6 +765,7 @@ a:active {
 --------------------------------------------------------------*/
 .main-navigation {
 	display: block;
+	font-family: "Roboto Slab", Georgia, Times, "Times New Roman", serif;
 	font-size: 14px;
 	font-size: .875rem;
 	width: 100%;
