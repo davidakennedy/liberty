@@ -940,7 +940,7 @@ a:active {
 	line-height: normal;
 	padding: 15px 1.4375rem .875rem;
 	text-decoration: none;
-	top: 37px;
+	top: 41px;
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
 }
