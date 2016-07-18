@@ -111,7 +111,7 @@ h1 {
 
 mark {
 	background: #ff0;
-	color: #444444;
+	color: #222222;
 }
 
 small {
@@ -264,7 +264,7 @@ button,
 input,
 select,
 textarea {
-	color: #444444;
+	color: #222222;
 	font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	font-size: 1rem;
@@ -383,7 +383,7 @@ html {
 
 body {
 	background: #ffffff; /* Fallback for when there is no custom background color defined. */
-	border-top: 4px solid #1867ff;
+	border-top: 4px solid #0a6ccc;
 	word-wrap: break-word;
 }
 
@@ -443,7 +443,7 @@ blockquote.alignright {
 }
 
 hr {
-	background-color: #444444;
+	background-color: #cccccc;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.75em;
@@ -512,7 +512,7 @@ input[type="submit"],
 	border: 0 none;
 	border-bottom: 2px solid;
 	background: transparent;
-	color: #444444;
+	color: #222222;
 	font-size: 18px;
 	font-size: 1rem;
 	font-weight: bold;
@@ -547,7 +547,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	color: #444444;
+	color: #222222;
 	border: 0 none;
 	border-bottom: 2px solid;
 	box-sizing: border-box;
@@ -570,7 +570,7 @@ input[type="search"]:focus,
 textarea:focus {
 	border-bottom-width: 4px;
 	margin-bottom: -2px;
-	color: #444444;
+	color: #222222;
 	outline: none;
 }
 
@@ -644,7 +644,7 @@ textarea {
 
 .site-title a,
 .site-title a:visited {
-	color: #1867ff;
+	color: #0a6ccc;
 }
 
 .singular .site-title {
@@ -667,7 +667,7 @@ textarea {
 
 .entry-title a:hover,
 .entry-title a:focus {
-	color: #1867ff;
+	color: #0a6ccc;
 }
 
 .entry-meta,
@@ -693,7 +693,7 @@ textarea {
 
 .entry-meta:after,
 .page-template-right-column-page-php.singular .entry-meta:after {
-	border-top: 1px solid #1867ff;
+	border-top: 1px solid #0a6ccc;
 	content: "";
 	display: block;
 	margin-top: .875em;
@@ -766,7 +766,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #444444;
+	color: #222222;
 	text-decoration: none;
 	transition: 0.2s;
 }
@@ -774,17 +774,17 @@ a {
 .textwidget a,
 .entry-content a,
 .comment-content a {
-	border-bottom: 1px solid #1867ff;
+	border-bottom: 1px solid #0a6ccc;
 }
 
 a:visited {
-	color: #444444;
+	color: #222222;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #444444;
+	color: #222222;
 }
 
 .textwidget a:hover,
@@ -851,7 +851,7 @@ a:active {
 .main-navigation a:hover,
 .main-navigation a:focus,
 .main-navigation a:active {
-	border-bottom: 2px solid #1867ff;
+	border-bottom: 2px solid #0a6ccc;
 }
 
 .main-navigation ul ul {
@@ -864,7 +864,7 @@ a:active {
 
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a {
-	border-bottom: 2px solid #1867ff;
+	border-bottom: 2px solid #0a6ccc;
 }
 
 /* Small menu. */
@@ -1209,7 +1209,7 @@ td#next {
 }
 
 .comment .comment-meta:after {
-	border-top: 1px solid #1867ff;
+	border-top: 1px solid #0a6ccc;
 	content: "";
 	display: block;
 	margin-top: .875em;
@@ -1301,7 +1301,7 @@ td#next {
 }
 
 #infinite-footer .blog-credits {
-	color: #444444;
+	color: #222222;
 	font-size: 14px;
 	font-size: .875rem;
 	font-style: italic;
@@ -1309,7 +1309,7 @@ td#next {
 
 #infinite-footer .blog-info a,
 #infinite-footer .blog-credits a {
-	color: #444444;
+	color: #222222;
 }
 
 #infinite-footer .blog-info a:hover,
@@ -1370,7 +1370,7 @@ object {
 }
 
 .wp-caption-text:after {
-	border-top: 1px solid #1867ff;
+	border-top: 1px solid #0a6ccc;
 	clear: both;
 	content: "";
 	display: block;
