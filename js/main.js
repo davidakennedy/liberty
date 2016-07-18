@@ -1,4 +1,4 @@
-(function($) {
+(function( $ ) {
 	var stickyHeader = $( '.site-header' );
 	var body = $( 'body' );
 	var adminBar = libertyadminbar; //localized in functions.php
@@ -11,7 +11,7 @@
 	}
 
 	var stickyTime = function() {
-		if( $(window).scrollTop() > stickyHeaderOffset ) {
+		if( $( window ).scrollTop() > stickyHeaderOffset ) {
 			body.addClass( 'sticking' );
 		} else {
 			body.removeClass( 'sticking' );
@@ -44,4 +44,4 @@
 	$( window ).on( 'resize post-load', function() {
 		linkedImages();
 	} );
-})(jQuery);
+})( jQuery );
