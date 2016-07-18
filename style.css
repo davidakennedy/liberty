@@ -781,6 +781,12 @@ a:visited {
 	color: #222222;
 }
 
+.textwidget a:visited,
+.entry-content a:visited,
+.comment-content a:visited {
+	border-bottom: 1px solid #aa0375;
+}
+
 a:hover,
 a:focus,
 a:active {
