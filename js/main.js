@@ -55,15 +55,15 @@
 	};
 
 	// After window loads
-	window.onload = function() {
-		linkedImages();
+	document.addEventListener( 'DOMContentLoaded', function() {
 		stickyTime();
-	};
+		linkedImages();
+	});
 
 	// After scrolling
-	window.onscroll = function() {
+	window.addEventListener( 'scroll', function() {
 		stickyTime();
-	};
+	} );
 
 	// After window is resized or infinite scroll loads new posts
 	window.addEventListener( 'resize', function() {
