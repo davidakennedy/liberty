@@ -166,7 +166,7 @@ function liberty_scripts() {
 
 	wp_enqueue_style( 'liberty-fonts', liberty_fonts_url(), array(), null );
 
-	wp_enqueue_script( 'liberty-script', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '20150623', true );
+	wp_enqueue_script( 'liberty-script', get_template_directory_uri() . '/js/main.js', array(), '20150623', true );
 
 	$adminbar = is_admin_bar_showing();
 	wp_localize_script( 'liberty-script', 'libertyadminbar', array( $adminbar ) );

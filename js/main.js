@@ -1,47 +1,75 @@
-(function( $ ) {
-	var stickyHeader = $( '.site-header' );
-	var body = $( 'body' );
+( function() {
+	var stickyHeader = document.querySelectorAll( '.site-header' )[0];
+	var body = document.getElementsByTagName( 'body' )[0];
 	var adminBar = libertyadminbar; //localized in functions.php
 	var stickyHeaderOffset;
 
+	// A few utilty functions.
+	// Get the offset of an elment.
+	function offset( el ) {
+		var rect = el.getBoundingClientRect();
+		return {
+			top: rect.top + document.body.scrollTop,
+			left: rect.left + document.body.scrollLeft
+		};
+	}
+
+	// Go up in the Dom and get the closest parent element of a certain type.
+	function closest( el, selector ) {
+		var matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;
+
+		while ( el ) {
+			if ( matchesSelector.call( el, selector ) ) {
+				break;
+			}
+			el = el.parentElement;
+		}
+		return el;
+	}
+
 	if ( adminBar > 0 ) {
-		stickyHeaderOffset = stickyHeader.offset().top - 32;
+		stickyHeaderOffset = offset( stickyHeader ).top - 32;
 	} else {
-		stickyHeaderOffset = stickyHeader.offset().top;
+		stickyHeaderOffset = offset( stickyHeader ).top;
 	}
 
 	var stickyTime = function() {
-		if( $( window ).scrollTop() > stickyHeaderOffset ) {
-			body.addClass( 'sticking' );
+		if ( body.scrollTop > stickyHeaderOffset ) {
+			if ( -1 === body.className.indexOf( 'sticking' ) ) {
+				body.className += ' sticking';
+			}
 		} else {
-			body.removeClass( 'sticking' );
+			body.className = body.className.replace( ' sticking', '' );
 		}
-	}
+	};
 
 	/* Remove border from linked images */
-	function linkedImages() {
-		var imgs = $( '.entry-content img' );
+	var linkedImages = function() {
+		var imgs = document.querySelectorAll( '.entry-content img' );
 
 		for ( var i = 0, imgslength = imgs.length; i < imgslength; i++ ) {
-			if ( '' !== $( imgs[i] ).closest( 'a' ) ) {
-				$( imgs[i] ).closest( 'a' ).addClass( 'no-line' );
+			if ( null !== closest( imgs[i], 'a' ) ) {
+				closest( imgs[i], 'a' ).classList.add( 'no-line' );
 			}
 		}
-	}
+	};
 
 	// After window loads
-	$( window ).load( function() {
+	window.onload = function() {
 		linkedImages();
 		stickyTime();
-	} );
+	};
 
 	// After scrolling
-	$( window ).scroll( function() {
+	window.onscroll = function() {
 		stickyTime();
-	} );
+	};
 
 	// After window is resized or infinite scroll loads new posts
-	$( window ).on( 'resize post-load', function() {
+	window.addEventListener( 'resize', function() {
 		linkedImages();
 	} );
-})( jQuery );
+	window.addEventListener( 'post-load', function() {
+		linkedImages();
+	} );
+} )();
