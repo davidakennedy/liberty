@@ -31,7 +31,7 @@ h1 {
 
 mark {
 	background: #ff0;
-	color: #404040;
+	color: #222222;
 }
 
 small {
@@ -114,8 +114,8 @@ html .mceContentBody {
 	max-width: 739px;
 }
 body.mceContentBody {
-	color: #404040;
-	font-family: "Roboto Mono", Consolas, monaco, monospace;
+	color: #222222;
+	font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	font-size: 1rem;
 	line-height: 1.75;
@@ -128,8 +128,8 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-family: "Roboto Mono", Consolas, monaco, monospace;
-	font-weight: bold;
+	font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-weight: 500;
 	margin: 0 0 .875em;
 }
 h1 {
@@ -268,7 +268,7 @@ blockquote.alignright {
 }
 
 hr {
-	background-color: #404040;
+	background-color: #cccccc;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.75em;
