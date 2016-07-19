@@ -182,6 +182,16 @@ function liberty_scripts() {
 add_action( 'wp_enqueue_scripts', 'liberty_scripts' );
 
 /**
+ * Handles JavaScript detection.
+ *
+ * Adds a `js` class to the root `<html>` element when JavaScript is detected.
+ */
+function liberty_javascript_detection() {
+	echo "<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>\n";
+}
+add_action( 'wp_head', 'liberty_javascript_detection', 0 );
+
+/**
  * Register Google Fonts
  */
 function liberty_fonts_url() {

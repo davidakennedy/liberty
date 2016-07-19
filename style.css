@@ -849,7 +849,6 @@ a:active {
 }
 
 .main-navigation ul {
-	display: none;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
@@ -889,11 +888,21 @@ a:active {
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.menu-toggle {
+	display: none;
+}
+
+/* Only enable menu toggle if JavaScript is detected. */
+.js .main-navigation ul {
+	display: none;
+}
+
+.js .menu-toggle,
+.js .main-navigation.toggled ul {
 	display: block;
 }
-.menu-toggle {
+
+.js .menu-toggle {
 	position: absolute;
 		right: 1.75em;
 		top: 1.75em;
@@ -1464,7 +1473,7 @@ object {
 		max-width: 150px;
 	}
 
-	.menu-toggle {
+	.js .menu-toggle {
 		display: none;
 	}
 
@@ -1480,7 +1489,8 @@ object {
 		width: auto;
 	}
 
-	.main-navigation ul {
+	.no-js .main-navigation ul,
+	.js .main-navigation ul {
 		display: block;
 	}
 
