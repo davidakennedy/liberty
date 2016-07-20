@@ -1,3 +1,8 @@
+/**
+ * main.js
+ *
+ * Handles the sticky header and utility functions needed in theme.
+ */
 ( function() {
 	var stickyHeader = document.querySelectorAll( '.site-header' )[0];
 	var body = document.getElementsByTagName( 'body' )[0];
