@@ -32,3 +32,13 @@ function liberty_infinite_scroll_render() {
 		get_template_part( 'template-parts/content', get_post_format() );
 	}
 } // end function liberty_infinite_scroll_render
+
+/** Load the script with the `post-load` event listener.
+ * jQuery is required to catch this event.
+ */
+if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) ) {
+	function liberty_jetpack_script() {
+		wp_enqueue_script( 'liberty-jetpack-script', get_template_directory_uri() . '/js/jetpack.js', array( 'jquery' ), '1.0', true );
+	}
+	add_action( 'wp_enqueue_scripts', 'liberty_jetpack_script' );
+}

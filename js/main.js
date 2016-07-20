@@ -69,7 +69,4 @@
 	window.addEventListener( 'resize', function() {
 		linkedImages();
 	} );
-	window.addEventListener( 'post-load', function() {
-		linkedImages();
-	} );
 } )();
