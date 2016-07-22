@@ -317,7 +317,7 @@ h6 {
 
 p {
 	margin-top: 0;
-	margin-bottom: 1.75em;
+	margin-bottom: 1.6em;
 }
 
 dfn,
@@ -328,18 +328,18 @@ i {
 }
 
 blockquote {
-	margin: 0 1.75em 1.75em 2.25em;
+	margin: 0 1.6em 1.6em 2.25em;
 	font-size: 18px;
 	font-size: 1rem;
 }
 
 address {
-	margin: 0 0 1.75em;
+	margin: 0 0 1.6em;
 }
 
 pre {
 	font-family: "Roboto Mono", Consolas, monaco, monospace;
-	margin-bottom: 1.75em;
+	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
 }
@@ -461,13 +461,13 @@ hr {
 	background-color: #cccccc;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.75em;
+	margin-bottom: 1.6em;
 }
 
 ul,
 ol {
-	margin: 0 0 1.75em 0;
-	padding-left: 1.75em;
+	margin: 0 0 1.6em 0;
+	padding-left: 1.6em;
 }
 
 ul {
@@ -489,7 +489,7 @@ dt {
 }
 
 dd {
-	margin: 0 1.75em 1.75em;
+	margin: 0 1.6em 1.6em;
 }
 
 img {
@@ -498,7 +498,7 @@ img {
 }
 
 table {
-	margin: 0 0 1.75em;
+	margin: 0 0 1.6em;
 	width: 100%;
 }
 
@@ -597,7 +597,7 @@ textarea {
 /*-- Layout */
 .site {
 	margin-top: 3.5em;
-	padding: 0 1.75em;
+	padding: 0 1.6em;
 }
 
 .custom-background .site {
@@ -611,8 +611,8 @@ textarea {
 .custom-background .site-header,
 .custom-background .site-footer,
 .custom-background .site-content {
-	padding-left: 1.75em;
-	padding-right: 1.75em;
+	padding-left: 1.6em;
+	padding-right: 1.6em;
 }
 
 .site-footer {
@@ -624,7 +624,7 @@ textarea {
 .site-header {
 	margin-bottom: 3.5em;
 	position: relative;
-	padding-top: 1.75em;
+	padding-top: 1.6em;
 }
 
 .site-branding {
@@ -633,13 +633,13 @@ textarea {
 
 .custom-header {
 	display: block;
-	margin: 0 auto 1.75em;
+	margin: 0 auto 1.6em;
 }
 
 .custom-logo {
 	clear: both;
 	display: block;
-	margin-bottom: 1.75em;
+	margin-bottom: 1.6em;
 	max-width: 100%;
 	max-height: 150px;
 	width: auto;
@@ -694,7 +694,7 @@ textarea {
 }
 
 .entry-meta {
-	margin: 0 0 1.75em;
+	margin: 0 0 1.6em;
 }
 
 .entry-meta a:hover,
@@ -759,7 +759,7 @@ textarea {
 	font-size: 14px;
 	font-size: .875rem;
 	margin: 5.25em 0 3.5em;
-	padding-bottom: 1.75em;
+	padding-bottom: 1.6em;
 }
 
 .site-info {
@@ -845,7 +845,7 @@ a:active {
 
 .main-navigation > div > ul {
 	border-bottom: 2px solid;
-	padding-bottom: 1.75em;
+	padding-bottom: 1.6em;
 }
 
 .main-navigation ul {
@@ -857,7 +857,7 @@ a:active {
 .main-navigation li {
 	clear: both;
 	display: block;
-	margin: 1.75em 0 0;
+	margin: 1.6em 0 0;
 	position: relative;
 	vertical-align: top;
 	width: 100%;
@@ -875,7 +875,7 @@ a:active {
 }
 
 .main-navigation ul ul {
-	padding-left: 1.75em;
+	padding-left: 1.6em;
 }
 
 .main-navigation ul ul a {
@@ -904,8 +904,8 @@ a:active {
 
 .js .menu-toggle {
 	position: absolute;
-		right: 1.75em;
-		top: 1.75em;
+		right: 1.6em;
+		top: 1.6em;
 }
 
 .site-main .comment-navigation,
@@ -981,13 +981,13 @@ a:active {
 .alignleft {
 	display: inline;
 	float: left;
-	margin: .875em 1.75em .875em 0;
+	margin: .875em 1.6em .875em 0;
 }
 
 .alignright {
 	display: inline;
 	float: right;
-	margin: .875em 0 .875em 1.75em;
+	margin: .875em 0 .875em 1.6em;
 }
 
 .aligncenter {
@@ -1053,7 +1053,7 @@ a:active {
 }
 
 .error404 .widget {
-	margin-top: 1.75em;
+	margin-top: 1.6em;
 }
 
 .widget-title,
@@ -1207,12 +1207,12 @@ td#next {
 }
 
 .page-content {
-	margin: 1.75em 0 0;
+	margin: 1.6em 0 0;
 }
 
 .page-links {
 	clear: both;
-	margin: 0 0 1.75em;
+	margin: 0 0 1.6em;
 }
 
 /*--------------------------------------------------------------
@@ -1241,7 +1241,7 @@ td#next {
 	font-size: 14px;
 	font-size: .875rem;
 	font-style: italic;
-	margin: 0 0 1.75em;
+	margin: 0 0 1.6em;
 }
 
 .comment .comment-meta:after {
@@ -1253,7 +1253,7 @@ td#next {
 }
 
 .comment .comment-metadata span {
-	margin: 0 1.75em 0 0;
+	margin: 0 1.6em 0 0;
 }
 
 .comment-author {
@@ -1287,7 +1287,7 @@ td#next {
 	font-size: 14px;
 	font-size: .875rem;
 	font-style: italic;
-	margin: 1.75em 0;
+	margin: 1.6em 0;
 }
 
 #cancel-comment-reply-link {
@@ -1362,7 +1362,7 @@ td#next {
 }
 
 .jetpack-video-wrapper {
-	margin-bottom: 1.75em;
+	margin-bottom: 1.6em;
 }
 
 /*--------------------------------------------------------------
@@ -1390,7 +1390,7 @@ object {
 .wp-caption {
 	max-width: 100%;
 	padding: 0;
-	margin-bottom: 1.75em;
+	margin-bottom: 1.6em;
 }
 
 .wp-caption img[class*="wp-image-"] {
@@ -1423,7 +1423,7 @@ object {
 ## Galleries
 --------------------------------------------------------------*/
 .gallery {
-	margin-bottom: 1.75em;
+	margin-bottom: 1.6em;
 }
 
 .gallery-item {
@@ -1491,7 +1491,7 @@ object {
 	.main-navigation li {
 		clear: none;
 		display: inline-block;
-		margin: 0 1.75em 0 0;
+		margin: 0 1.6em 0 0;
 		width: auto;
 	}
 
@@ -1506,14 +1506,14 @@ object {
 		margin-left: -0.875em;
 		padding: 0 0.875em;
 		position: absolute;
-			top: 1.75em;
+			top: 1.6em;
 			left: -999em;
 		text-align: left;
 		width: 180px;
 		z-index: 99999;
 	}
 	.main-navigation ul ul li {
-		padding: 0.4375em 1.75em 0.4375em 0;
+		padding: 0.4375em 1.6em 0.4375em 0;
 		position: relative;
 		margin: 0;
 		width: 180px;
@@ -1674,7 +1674,7 @@ object {
 	.entry-footer > span {
 		clear: none;
 		display: inline;
-		margin: 0 1.75em 0 0;
+		margin: 0 1.6em 0 0;
 	}
 
 	.site-info {
@@ -1760,7 +1760,7 @@ object {
 	}
 
 	.sticking .site-content {
-		padding-top: 1.75em;
+		padding-top: 1.6em;
 	}
 
 	.singular .content-area {
@@ -1827,7 +1827,7 @@ object {
 	.search-no-results .page-content,
 	.error404 .page-content {
 		float: right;
-		margin: 0 0 1.75em;
+		margin: 0 0 1.6em;
 		width: 68%;
 	}
 
@@ -1916,7 +1916,7 @@ object {
 	.main-navigation li {
 		display: inline-block;
 		margin-right: 0;
-		margin-left: 1.75em;
+		margin-left: 1.6em;
 	}
 
 	.main-navigation ul > li.menu-item-has-children,
