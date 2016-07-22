@@ -730,6 +730,9 @@ textarea {
 .blog .entry-meta > span:not( .byline ),
 .archive .entry-meta > span:not( .byline ),
 .search .entry-meta > span:not( .byline ),
+.group-blog.blog .byline,
+.group-blog.archive .byline,
+.group-blog.search .byline,
 .entry-footer > span {
 	clear: both;
 	display: block;
@@ -1199,7 +1202,7 @@ td#next {
 
 .single .byline,
 .group-blog .byline {
-	display: block;
+	display: inline;
 }
 
 .entry-content {
@@ -1834,7 +1837,11 @@ object {
 	.blog .entry-meta > span:not( .byline ),
 	.archive .entry-meta > span:not( .byline ),
 	.search .entry-meta > span:not( .byline ),
-	.page-template-right-column-page-php .entry-meta > span:not( .byline ) {
+	.group-blog.blog .byline,
+	.group-blog.archive .byline,
+	.group-blog.search .byline,
+	.page-template-right-column-page-php .entry-meta > span:not( .byline ),
+	.group-blog.page-template-right-column-page-php .byline {
 		clear: both;
 		display: block;
 		width: 100%;
