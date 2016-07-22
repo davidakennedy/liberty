@@ -1046,6 +1046,12 @@ a:active {
 	text-decoration: underline;
 }
 
+.widget .textwidget a:hover,
+.widget .textwidget a:focus,
+.widget .textwidget a:active {
+	text-decoration: none;
+}
+
 .error404 .widget {
 	margin-top: 1.75em;
 }
