@@ -727,9 +727,9 @@ textarea {
 	margin: 0;
 }
 
-.blog .entry-meta > span,
-.archive .entry-meta > span,
-.search .entry-meta > span,
+.blog .entry-meta > span:not( .byline ),
+.archive .entry-meta > span:not( .byline ),
+.search .entry-meta > span:not( .byline ),
 .entry-footer > span {
 	clear: both;
 	display: block;
@@ -1199,7 +1199,7 @@ td#next {
 
 .single .byline,
 .group-blog .byline {
-	display: inline;
+	display: block;
 }
 
 .entry-content {
@@ -1831,10 +1831,10 @@ object {
 		width: 68%;
 	}
 
-	.blog .entry-meta > span,
-	.archive .entry-meta > span,
-	.search .entry-meta > span,
-	.page-template-right-column-page-php .entry-meta > span {
+	.blog .entry-meta > span:not( .byline ),
+	.archive .entry-meta > span:not( .byline ),
+	.search .entry-meta > span:not( .byline ),
+	.page-template-right-column-page-php .entry-meta > span:not( .byline ) {
 		clear: both;
 		display: block;
 		width: 100%;
