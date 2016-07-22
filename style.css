@@ -1856,8 +1856,8 @@ object {
 	}
 
 	.site-branding {
-		display: inline-block;
-		width: 49%;
+		float: left;
+		width: 55%;
 		transition: 0.3s;
 		vertical-align: bottom;
 	}
@@ -1901,9 +1901,9 @@ object {
 	}
 
 	.main-navigation {
-		display: inline-block;
+		float: left;
 		text-align: right;
-		width: 49%;
+		width: 45%;
 		vertical-align: middle;
 	}
 
