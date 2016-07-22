@@ -29,7 +29,7 @@ Tags: light, black, white, right-sidebar, two-columns, custom-background, custom
 	## Posts and pages
 	## Asides
 	## Comments
-# Infinite scroll
+# Jetpack
 # Media
 	## Captions
 	## Galleries
@@ -1314,7 +1314,7 @@ td#next {
 }
 
 /*--------------------------------------------------------------
-# Infinite scroll
+# Jetpack
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
@@ -1366,6 +1366,10 @@ td#next {
 
 .jetpack-video-wrapper {
 	margin-bottom: 1.6em;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:hover {
+	text-decoration: none;
 }
 
 /*--------------------------------------------------------------
