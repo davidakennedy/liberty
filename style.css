@@ -1368,7 +1368,7 @@ td#next {
 	margin-bottom: 1.6em;
 }
 
-#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:hover {
+.entry-content #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:hover {
 	text-decoration: none;
 }
 
