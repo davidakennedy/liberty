@@ -1368,8 +1368,8 @@ td#next {
 	margin-bottom: 1.6em;
 }
 
-.entry-content #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:hover {
-	text-decoration: none;
+.entry-content .jp-relatedposts a {
+	border: 0 none;
 }
 
 /*--------------------------------------------------------------
