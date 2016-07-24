@@ -14,7 +14,7 @@
 function liberty_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'liberty_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => '404040',
+		'default-text-color'     => '222222',
 		'width'                  => 1088,
 		'height'                 => 300,
 		'flex-height'            => true,
