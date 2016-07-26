@@ -126,6 +126,30 @@ function liberty_comments( $comment, $args, $depth ) {
 <?php
 }
 
+if ( ! function_exists( 'liberty_footer_credits' ) ) :
+/**
+ * Adds footer credits, including credits, copyright and quotes.
+ */
+function liberty_footer_credits() {
+	$credits = sprintf(
+		esc_html__( 'Made with %1$s &amp; %2$s', 'liberty' ),
+		'<a href="' . esc_url( 'https://wordpress.org' ) . '">' . 'WordPress' . '</a>',
+		'<a href="' . esc_url( 'https://github.com/davidakennedy/liberty' ) . '">' . 'Liberty' . '</a>.'
+	);
+
+	$copyright = esc_html__( '&copy; 2009 – ' . date( 'Y' ) . ' David A. Kennedy.', 'liberty' );
+
+	$quotes = array(
+		esc_html__( 'Go Gators!' ),
+		esc_html__( 'Probably eating a pb&amp;j.' ),
+		esc_html__( 'Doing some burpees.' ),
+		esc_html__( 'So many video games, so little time.' ),
+	);
+
+	echo $credits . ' ' . $copyright . ' ' . $quotes[rand( 0, count( $quotes ) - 1 )];
+}
+endif;
+
 /**
  * Returns true if a blog has more than 1 category.
  *
