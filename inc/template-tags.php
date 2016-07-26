@@ -25,7 +25,7 @@ function liberty_posted_on() {
 	);
 
 	if ( is_single() ) {
-		$posted_on = sprintf( esc_attr__( 'Posted on %1$s', 'liberty' ),
+		$posted_on = sprintf( esc_html__( 'Posted on %1$s', 'liberty' ),
 						'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 					);
 	}
