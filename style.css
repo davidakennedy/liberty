@@ -436,13 +436,13 @@ blockquote.alignright {
 	font-size: 1rem;
 }
 
-.entry-content > p:first-child:first-letter {
+.post .entry-content > p:first-child:first-letter {
 	float: left;
 	font-family: "Roboto Mono", Consolas, monaco, monospace;
-	font-size: 400%;
+	font-size: 200%;
 	font-style: normal;
-	line-height: 0.8;
-	padding: 4px 8px 0 0;
+	line-height: 1;
+	padding: 4px 4px 0 0;
 }
 
 .intro {
