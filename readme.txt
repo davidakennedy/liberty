@@ -43,7 +43,7 @@ Liberty has two page templates for displaying your content in an alternate forma
 
 = Does this theme have any special features? =
 
-Liberty includes styles for introductory text and pull quotes. See how these work on the demo site: https://Libertydemo.wordpress.com/text-formatting/
+Liberty includes styles for introductory text and pull quotes. See how these work on the demo site: https://libredemo.wordpress.com/text-formatting/
 
 Quick Specs (all measurements in pixels)
 * The main column width is 739, except on the full-width page template, where it's 1088.
@@ -58,6 +58,5 @@ Quick Specs (all measurements in pixels)
 
 == Credits ==
 
-* Photo in the screenshot is from unsplash.com, licensed CC0
 * Based on Underscores, http://underscores.me/ and Libre http://wordpress.com/themes/libre/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
