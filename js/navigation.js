@@ -4,7 +4,7 @@
  * Handles toggling the navigation menu for small screens and enables tab
  * support for dropdown menus.
  */
-( function() {
+(function() {
 	var container, button, menu, links, subMenus;
 
 	container = document.getElementById( 'site-navigation' );
@@ -45,11 +45,6 @@
 	// Get all the link elements within the menu.
 	links    = menu.getElementsByTagName( 'a' );
 	subMenus = menu.getElementsByTagName( 'ul' );
-
-	// Set menu items with submenus to aria-haspopup="true".
-	for ( var i = 0, len = subMenus.length; i < len; i++ ) {
-		subMenus[i].parentNode.setAttribute( 'aria-haspopup', 'true' );
-	}
 
 	// Each time a menu link is focused or blurred, toggle focus.
 	for ( i = 0, len = links.length; i < len; i++ ) {
