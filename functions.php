@@ -64,6 +64,9 @@ function liberty_setup() {
 	add_theme_support( 'custom-background', apply_filters( 'liberty_custom_background_args', array(
 		'default-color' => 'ffffff',
 	) ) );
+
+	// Add support for selective refresh widgets in the Customizer.
+	add_theme_support( 'customize_selective_refresh_widgets' );
 }
 endif; // liberty_setup
 add_action( 'after_setup_theme', 'liberty_setup' );
