@@ -37,6 +37,16 @@ function liberty_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'liberty_body_classes' );
 
+/**
+ * Add a pingback url auto-discovery header for singularly identifiable articles.
+ */
+function liberty_pingback_header() {
+	if ( is_singular() && pings_open() ) {
+		echo '<link rel="pingback" href="', bloginfo( 'pingback_url' ), '">';
+	}
+}
+add_action( 'wp_head', 'liberty_pingback_header' );
+
 /*
  * Filters the Categories archive widget to add a span around the post count
  */
