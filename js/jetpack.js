@@ -3,7 +3,7 @@
  *
  * Handles JavaScript fired when Jetpack's infinite scroll loads more posts.
  */
- ( function( $ ) {
+ (function( $ ) {
 	$( document.body ).on( 'post-load', function () {
 		// Go up in the Dom and get the closest parent element of a certain type.
 		function closest( el, selector ) {

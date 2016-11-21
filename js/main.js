@@ -3,7 +3,7 @@
  *
  * Handles the sticky header and utility functions needed in theme.
  */
-( function() {
+(function() {
 	var stickyHeader = document.querySelectorAll( '.site-header' )[0];
 	var body = document.getElementsByTagName( 'body' )[0];
 	var adminBar = libertyadminbar; //localized in functions.php
@@ -74,4 +74,4 @@
 	window.addEventListener( 'resize', function() {
 		linkedImages();
 	} );
-} )();
+})();
