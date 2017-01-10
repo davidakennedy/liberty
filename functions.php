@@ -207,12 +207,12 @@ function liberty_fonts_url() {
 	$roboto = esc_html_x( 'on', 'Roboto font: on or off', 'liberty' );
 
 	/* Translators: If there are characters in your language that are not
-	 * supported by Lora; translate this to 'off'. Do not translate
+	 * supported by Roboto Mono; translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
 	$roboto_mono = esc_html_x( 'on', 'Roboto Mono font: on or off', 'liberty' );
 
-	if ( 'off' !== $roboto || 'off' !== $roboto_slab || 'off' !== $roboto_mono ) {
+	if ( 'off' !== $roboto || 'off' !== $roboto_mono ) {
 
 		$font_families = array();
 
