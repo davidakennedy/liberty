@@ -36,14 +36,14 @@ Yes, a main navigation area appears in the header, and "floats" over your conten
 
 = Does this theme have any page templates? =
 
-Liberty has two page templates for displaying your content in an alternate format. View them in action on the demo site: http://Libertydemo.wordpress.com
+Liberty has two page templates for displaying your content in an alternate format. View them in action on the demo site for Libre: http://libredemo.wordpress.com
 
 * The Full Width, No Sidebar template is a wide page template, giving your content plenty of space to spread out.
 * The Right Content, No Sidebar template mimics the look of the blog, with the page title on the left and the content on the right.
 
 = Does this theme have any special features? =
 
-Liberty includes styles for introductory text and pull quotes. See how these work on the demo site: https://libredemo.wordpress.com/text-formatting/
+Liberty includes styles for introductory text and pull quotes. See how these work on the demo site for Libre: https://libredemo.wordpress.com/text-formatting/
 
 Quick Specs (all measurements in pixels)
 * The main column width is 739, except on the full-width page template, where it's 1088.
